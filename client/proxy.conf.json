@@ -11,6 +11,30 @@
       "logLevel": "debug",
       "changeOrigin": true
     },
+    "/competitions/*": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    },
+    "/entries/*": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    },
+    "/scoresheets/*": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    },
+    "/sessions/*": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+    },
     "/login": {
         "target": "http://localhost:5000",
         "secure": false,
