@@ -3,6 +3,7 @@ const PROXY_CONFIG = [
     {
         context: [
             "/api",
+            "/users",
             "/login",
             "/logout"
         ],

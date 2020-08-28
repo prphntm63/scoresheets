@@ -53,8 +53,19 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
-let api = require('./api')
+// API calls
+let api = require('./routes/api')
+let entries = require('./routes/api')
+let users = require('./routes/users')
+let competitions = require('./routes/competitions')
+let sessions = require('./routes/sessions')
+let scoresheets = require('./routes/scoresheets')
 app.use('/api', api)
+app.use('/entries', entries)
+app.use('/users', users)
+app.use('/competitions', competitions)
+app.use('/sessions', sessions)
+app.use('/scoresheets', scoresheets)
 
 app.post('/login', function(req, res, next) {
     passport.authenticate('local', function(err, user, info) {
@@ -84,8 +95,6 @@ if (process.env.NODE_ENV === "development" ){
         res.sendFile(path.join(__dirname+'/client/build/index.html'));
     });
 }
-
-
 
 function ensureAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {

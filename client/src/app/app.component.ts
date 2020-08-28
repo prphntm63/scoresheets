@@ -18,6 +18,7 @@ interface User {
       <h1 *ngIf="user; else noUser">
         Welcome {{user.firstName}} {{user.lastName}}!
       </h1>
+      <button (click)="updateUserData()">Update User Data</button>
       <ng-template #noUser>
         <h1>
           No User
@@ -54,6 +55,20 @@ export class AppComponent{
     private http: HttpClient
   ) {
     this.http.post('/login', this.credentials).subscribe((response: User) => {
+      console.log('login responese:', response)
+      this.user = response
+    })
+  }
+
+  updateUserData() {
+    const body = {
+      "email": "test.user@gmail.com",
+      "plaintextPassword": "password",
+      "firstName": "New",
+      "lastName": "User"
+    }
+
+    this.http.post('/users/update', body).subscribe((response: User) => {
       console.log('login responese:', response)
       this.user = response
     })

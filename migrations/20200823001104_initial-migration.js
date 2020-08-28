@@ -7,7 +7,7 @@ exports.up = function(knex) {
             table.uuid('id').defaultTo(knex.raw('uuid_generate_v4()')).unique()
             table.timestamp('ctime').defaultTo(knex.fn.now())
             table.timestamp('mtime').defaultTo(knex.fn.now())
-            table.string('email')
+            table.string('email').unique()
             table.string('hashedPassword')
             table.string('firstName')
             table.string('lastName')
@@ -21,6 +21,7 @@ exports.up = function(knex) {
             table.string('industry')
             table.string('judging_years')
             table.enum('role', ["USER","CLUB_ADMIN","COMPETITION_ADMIN","MODERATOR","SUPERADMIN"]).defaultTo("USER")
+            table.boolean('verified').defaultTo(false)
         })
         .createTable('Competitions', table => {
             table.uuid('id').defaultTo(knex.raw('uuid_generate_v4()')).unique()
@@ -173,7 +174,6 @@ exports.down = function(knex) {
     return knex.schema
     .dropTable('CompetitionUserLimitations')
     .dropTable('CompetitionRoles')
-    .dropTable('ClubRoles')
     .dropTable('Scoresheets')
     .dropTable('JudgingSessions')
     .dropTable('Entries')
