@@ -1,0 +1,879 @@
+{
+    "format": {
+        "id:": "tabs",
+        "type": "tabs",
+        "elements": [
+            {
+                "id": "appearance",
+                "order": 0,
+                "label": "Appearance",
+                "elements": [
+                    {
+                        "id": "appearance_color",
+                        "type": "section",
+                        "column": 0,
+                        "order": 0,
+                        "label": "Color",
+                        "elements": [
+                            {
+                                "id": "appearance_color_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Yellow", "Gold", "Amber", "Copper", "Brown", "Black"]
+                            },
+                            {
+                                "id": "appearance_color_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "appearance_clarity_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Brilliant","Hazy","Opaque"]
+                            },
+                            {
+                                "id": "appearance_clarity_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "appearance_color_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Color and Clarity Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "appearance_head",
+                        "type": "section",
+                        "column": 0,
+                        "order": 1,
+                        "label": "Head",
+                        "elements": [
+                            {
+                                "id": "appearance_head_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["White", "Ivory", "Beige", "Tan", "Brown"]
+                            },
+                            {
+                                "id": "appearance_head_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "appearance_retention_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Quick","Lasting"]
+                            },
+                            {
+                                "id": "appearance_retention_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "appearance_texture_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Fine","Rocky"]
+                            },
+                            {
+                                "id": "appearance_texture_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "appearance_head_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Head Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "appearance_overall",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Head",
+                        "elements": [
+                            {
+                                "id": "appearance_overall_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": "Overall Appearance Comments"
+                            },
+                            {
+                                "id": "appearance_score",
+                                "type": "score_box",
+                                "input": true,
+                                "column": 0,
+                                "order": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aroma",
+                "order": 1,
+                "label": "Aroma",
+                "elements": [
+                    {
+                        "id": "aroma_malt",
+                        "type": "section",
+                        "column": 0,
+                        "order": 0,
+                        "label": "Malt Aroma",
+                        "elements": [
+                            {
+                                "id": "aroma_malt_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "aroma_malt_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "aroma_malt_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Malt Aroma Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "aroma_malt",
+                        "type": "section",
+                        "column": 0,
+                        "order": 1,
+                        "label": "Hops Aroma",
+                        "elements": [
+                            {
+                                "id": "aroma_hops_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "aroma_hops_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "aroma_hops_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Hop Aroma Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "aroma_esters",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Esters",
+                        "elements": [
+                            {
+                                "id": "aroma_esters_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "aroma_esters_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "aroma_esters_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Ester Aroma Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "aroma_other",
+                        "type": "section",
+                        "column": 0,
+                        "order": 3,
+                        "label": "Other Aroma",
+                        "elements": [
+                            {
+                                "id": "aroma_other_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "aroma_other_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "aroma_other_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Other Aroma Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "aroma_overall",
+                        "type": "section",
+                        "column": 0,
+                        "order": 4,
+                        "label": "Overall Aroma",
+                        "elements": [
+                            {
+                                "id": "aroma_overall_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": "Overall Aroma Comments"
+                            },
+                            {
+                                "id": "aroma_score",
+                                "type": "score_box",
+                                "input": true,
+                                "column": 0,
+                                "order": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "descriptors",
+                "order": 2,
+                "label": "Descriptors",
+                "elements": []
+            },
+            {
+                "id": "flavor",
+                "order": 3,
+                "label": "Flavor",
+                "elements": [
+                    {
+                        "id": "flavor_malt",
+                        "type": "section",
+                        "column": 0,
+                        "order": 0,
+                        "label": "Malt Flavor",
+                        "elements": [
+                            {
+                                "id": "flavor_malt_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "flavor_malt_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_malt_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Malt Flavor Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_hops",
+                        "type": "section",
+                        "column": 0,
+                        "order": 1,
+                        "label": "Hops Flavor",
+                        "elements": [
+                            {
+                                "id": "flavor_hops_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "flavor_hops_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_hops_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Hops Flavor Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_bitterness",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Bitterness",
+                        "elements": [
+                            {
+                                "id": "flavor_bitterness_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "flavor_bitterness_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_bitterness_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Bitterness Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_fermentation",
+                        "type": "section",
+                        "column": 0,
+                        "order": 3,
+                        "label": "Fermentation Flavor",
+                        "elements": [
+                            {
+                                "id": "flavor_fermentation_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "flavor_fermentation_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_fermentation_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Fermentation Flavor Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_balance",
+                        "type": "section",
+                        "column": 0,
+                        "order": 4,
+                        "label": "Flavor Balance",
+                        "elements": [
+                            {
+                                "id": "flavor_balance_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Malty", "Hoppy"]
+                            },
+                            {
+                                "id": "flavor_malt_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_malt_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Flavor Balance Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_finish",
+                        "type": "section",
+                        "column": 0,
+                        "order": 5,
+                        "label": "Finish and Aftertaste",
+                        "elements": [
+                            {
+                                "id": "flavor_finish_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Dry", "Sweet"]
+                            },
+                            {
+                                "id": "flavor_finish_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            },
+                            {
+                                "id": "flavor_finish_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 1,
+                                "order": 0,
+                                "label": "Finish and Aftertaste Comments"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "flavor_overall",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Overall Flavor",
+                        "elements": [
+                            {
+                                "id": "flavor_overall_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": "Overall Flavor Comments"
+                            },
+                            {
+                                "id": "flavor_score",
+                                "type": "score_box",
+                                "input": true,
+                                "column": 0,
+                                "order": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "mouthfeel",
+                "order": 4,
+                "label": "Mouthfeel",
+                "elements": [
+                    {
+                        "id": "mouthfeel_body",
+                        "type": "section",
+                        "column": 0,
+                        "order": 0,
+                        "label": "Body",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_body_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Thin", "Medium", "Full"]
+                            },
+                            {
+                                "id": "mouthfeel_body_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_carbonation",
+                        "type": "section",
+                        "column": 0,
+                        "order": 1,
+                        "label": "Carbonation",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_carbonation_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "mouthfeel_carbonation_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_warmth",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Warmth",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_warmth_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "mouthfeel_warmth_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_creaminess",
+                        "type": "section",
+                        "column": 0,
+                        "order": 3,
+                        "label": "Creaminess",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_creaminess_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Thin", "Medium", "Full"]
+                            },
+                            {
+                                "id": "mouthfeel_creaminess_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_astringency",
+                        "type": "section",
+                        "column": 0,
+                        "order": 4,
+                        "label": "Astringency",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_astringency_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Low", "Medium", "High"]
+                            },
+                            {
+                                "id": "mouthfeel_astringency_inappropriate",
+                                "type": "checkbox",
+                                "input": true,
+                                "column": 0,
+                                "order": 1,
+                                "label": "Inappropriate"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_overall",
+                        "type": "section",
+                        "column": 0,
+                        "order": 5,
+                        "label": "Overall Mouthfeel",
+                        "elements": [
+                            {
+                                "id": "mouthfeel_overall_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": "Overall Flavor Comments"
+                            },
+                            {
+                                "id": "mouthfeel_score",
+                                "type": "score_box",
+                                "input": true,
+                                "column": 0,
+                                "order": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "overall",
+                "order": 5,
+                "label": "Overall",
+                "elements": [
+                    {
+                        "id": "overall_example",
+                        "type": "section",
+                        "column": 0,
+                        "order": 0,
+                        "label": "Overall Example",
+                        "elements": [
+                            {
+                                "id": "overall_example_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Not To Style", "Classic Example"]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "overall_flaws",
+                        "type": "section",
+                        "column": 0,
+                        "order": 1,
+                        "label": "Flaws",
+                        "elements": [
+                            {
+                                "id": "overall_flaws_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Significant Flaws", "Flawless"]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "overall_opinion",
+                        "type": "section",
+                        "column": 0,
+                        "order": 2,
+                        "label": "Overall Opinion",
+                        "elements": [
+                            {
+                                "id": "overall_opinion_slider",
+                                "type": "slider",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": ["Lifeless", "Wonderful"]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mouthfeel_overall",
+                        "type": "section",
+                        "column": 0,
+                        "order": 3,
+                        "label": "Overall Feedback",
+                        "elements": [
+                            {
+                                "id": "flavor_overall_comment",
+                                "type": "textarea",
+                                "input": true,
+                                "column": 0,
+                                "order": 0,
+                                "label": "Overall Flavor Comments"
+                            },
+                            {
+                                "id": "flavor_score",
+                                "type": "score_box",
+                                "column": 0,
+                                "order": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "fields": {
+        "aroma_malt": "number",
+        "aroma_malt_inappropriate": "boolean",
+        "aroma_malt_comment": "string",
+        "aroma_hops": "number",
+        "aroma_hops_inappropriate": "boolean",
+        "aroma_hops_comment": "string",
+        "aroma_esters": "number",
+        "aroma_esters_inappropriate": "boolean",
+        "aroma_esters_comment": "string",
+        "aroma_other": "number",
+        "aroma_other_inappropriate": "boolean",
+        "aroma_other_comment": "string",
+        
+        "appearance_color": "number",
+        "appearance_color_inappropriate": "boolean",
+        "appearance_color_other": "string",
+        "appearance_clarity": "number",
+        "appearance_clarity_inappropriate": "boolean",
+        "appearance_clarity_other": "string",
+        "appearance_head": "number",
+        "appearance_head_inappropriate": "boolean",
+        "appearance_head_other": "string",
+        "appearance_retention": "number",
+        "appearance_retention_inappropriate": "boolean",
+        "appearance_retention_other": "string",
+        "appearance_texture": "number",
+        "appearance_texture_inappropriate": "boolean",
+        "appearance_texture_comment": "string",
+        "appearance_other_comment": "string",
+
+        "descriptor_acetaldehyde": "boolean",
+        "descriptor_alcoholic": "boolean",
+        "descriptor_astringent": "boolean",
+        "descriptor_brettanomyces": "boolean",
+        "descriptor_diacetyl": "boolean",
+        "descriptor_dms": "boolean",
+        "descriptor_estery": "boolean",
+        "descriptor_grassy": "boolean",
+        "descriptor_lightstruck": "boolean",
+        "descriptor_metallic": "boolean",
+        "descriptor_musty": "boolean",
+        "descriptor_oxidized": "boolean",
+        "descriptor_phenolic": "boolean",
+        "descriptor_smoky": "boolean",
+        "descriptor_solvent": "boolean",
+        "descriptor_sour": "boolean",
+        "descriptor_spicy": "boolean",
+        "descriptor_sulfur": "boolean",
+        "descriptor_vegetal": "boolean",
+        "descriptor_yeasty": "boolean",
+        
+        "flavor_malt": "number",
+        "flavor_malt_inappropriate": "boolean",
+        "flavor_malt_comment": "string",
+        "flavor_hops": "number",
+        "flavor_hops_inappropriate": "boolean",
+        "flavor_hops_comment": "string",
+        "flavor_fermentation": "number",
+        "flavor_fermentation_inappropriate": "boolean",
+        "flavor_fermentation_comment": "string",
+        "flavor_balance": "number",
+        "flavor_balance_inappropriate": "boolean",
+        "flavor_balance_comment": "string",
+        "flavor_finish_aftertaste": "number",
+        "flavor_finish_aftertaste_inappropriate": "boolean",
+        "flavor_finish_aftertaste_comment": "string",
+        "flavor_other_comment": "string",
+        
+        "mouthfeel_body": "number",
+        "mouthfeel_body_inappropriate": "boolean",
+        "mouthfeel_body_comment": "string",
+        "mouthfeel_carbonation": "number",
+        "mouthfeel_carbonation_inappropriate": "boolean",
+        "mouthfeel_carbonation_comment": "string",
+        "mouthfeel_warmth": "number",
+        "mouthfeel_warmth_inappropriate": "boolean",
+        "mouthfeel_warmth_comment": "string",
+        "mouthfeel_creaminess": "number",
+        "mouthfeel_creaminess_inappropriate": "boolean",
+        "mouthfeel_creaminess_comment": "string",
+        "mouthfeel_astringency": "number",
+        "mouthfeel_astringency_inappropriate": "boolean",
+        "mouthfeel_astringency_comment": "string",
+        "mouthfeel_other_comment": "string",
+        
+        "overall_class_example": "number",
+        "overall_flawless": "number",
+        "overall_wonderful": "number",
+        "overall_comment": "string"
+    }
+}

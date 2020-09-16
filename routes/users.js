@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const fetch = requrire('node-fetch')
 const db = require('./../db.js');
 const userDbFunctions = require('../database/users.js');
 
-const purgeValues = ['hashedPassword', 'ctime', 'mtime', 'id', 'role', 'verified']
+const purgeValues = ['hashedPassword', 'ctime', 'mtime', 'id', 'role', 'verified','invite_code','subscription_id']
 
 router.get('/test', ensureAuthenticated, (req, res) => {
     console.log('got Users test request')
@@ -20,11 +21,26 @@ router.post('/get', ensureAuthenticated, (req,res) => {
             res.status(404)
         }
 
+        // Check for user subscription here
+        // const testSubscription = 'ACTIVE'
+        // return fetch(`https://postman-echo.com/get?status=${testSubscription}&id=${userData.subscription_id}`)
+        return (new Promise((resolve, reject) => {resolve('testUserStatus')}))
+        .then(subscriptionData => {
+            if (!subscriptionData.id) {
+                subscriptionData.status = null
+            }
+
+            return [subscriptionData, userData]
+        })
+    })
+    .then(([subscriptionData, userData]) => { 
+
         res.status(200).json({
             ...userData,
             hashedPassword: undefined,
             role: superUser ? userData.role : undefined,
             verified: superUser ? userData.verified : undefined,
+            subscription: subscriptionData.status,
             ctime: undefined,
             mtime: undefined
         })
@@ -45,7 +61,7 @@ router.post('/update', (req, res) => {
         db.updateUser(userData)
         .then(newUserData => {
             purgeValues.forEach(val => {
-                delete newUserData['val']
+                delete newUserData[val]
             })
 
             res.status(200).json(newUserData)
@@ -59,7 +75,7 @@ router.post('/update', (req, res) => {
         db.createUser(userData)
         .then(newUserData => {
             purgeValues.forEach(val => {
-                delete newUserData['val']
+                delete newUserData[val]
             })
 
             res.status(200).json(newUserData)
