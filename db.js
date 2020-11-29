@@ -1,14 +1,14 @@
 const userDbFunctions = require('./database/users')
 const scoresheetDbFunctions = require('./database/scoresheets')
 const competitionDbFunctions = require('./database/competitions')
-const sessionsDbFunctions = require('./database/sessions')
-const entriesDbFunctions = require('./database/sessions')
+const flightsDbFunctions = require('./database/flights')
+const entriesDbFunctions = require('./database/entries')
 
 let db = {
     ...userDbFunctions,
     ...scoresheetDbFunctions,
     ...competitionDbFunctions,
-    ...sessionsDbFunctions,
+    ...flightsDbFunctions,
     ...entriesDbFunctions
 }
 

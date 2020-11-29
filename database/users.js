@@ -11,6 +11,7 @@ const userDbFunctions = {
         .then(hashedPassword => {
             delete userParams.plaintextPassword
             userParams.hashedPassword = hashedPassword
+            userParams.mtime = Date.now()
 
             return knex
             .returning('*')
@@ -30,6 +31,7 @@ const userDbFunctions = {
             .then(hashedPassword => {
                 delete userParams.plaintextPassword
                 userParams.hashedPassword = hashedPassword
+                userParams.mtime = Date.now()
 
                 return knex('Users')
                 .returning('*')
